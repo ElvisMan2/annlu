@@ -5,3 +5,19 @@
     font-family: roboto;
 }
 */
+.card{
+    height: 300px;
+}
+
+.card img{
+    max-height: 230px;
+    max-width: 230px;
+}
+
+.card figure{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
