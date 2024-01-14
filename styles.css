@@ -22,8 +22,9 @@
 }
 
 #banner{
-    height: 300px;
-    background-color: #6DBCD1;
+    background-image: url("./images/bg-annlu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 }
 
@@ -42,3 +43,11 @@
     text-decoration: none;
   }
   
+
+
+  #carousel{
+    background-image: url("./images/bg-annlu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
