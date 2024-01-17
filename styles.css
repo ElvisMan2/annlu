@@ -5,6 +5,13 @@
     font-family: roboto;
 }
 */
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+
 .card{
     height: 300px;
 }
@@ -49,5 +56,18 @@
     background-image: url("./images/bg-annlu.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 70px;
 
   }
+
+  #navbar{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    z-index: 1000; /* Valor alto para asegurar que esté por encima de otros elementos */
+  }
+
+  
