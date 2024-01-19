@@ -87,3 +87,49 @@ body {
   #error-message {
     color: red;
   }
+
+  /* Carrusel*/
+
+  .carousel-marcas .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-marcas .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+  .carousel-marcas .carousel-control-prev,
+  .carousel-marcas .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (min-width: 768px) {
+    .carousel-marcas .carousel-item {
+      margin-right: 0;
+      flex: 0 0 25%;
+      display: block;
+    }
+    .carousel-marcas .carousel-inner {
+      display: flex;
+    }
+  }
+  .carousel-marcas .card .img-wrapper {
+      max-width: 100%;
+      height: 13em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .carousel-marcas .card img {
+      max-height: 100%;
+  }
+  @media (max-width: 767px) {
+    .carousel-marcas .card .img-wrapper {
+      height: 17em;
+    }
+  }
