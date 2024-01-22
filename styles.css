@@ -155,3 +155,17 @@ body {
       height: 17em;
     }
   }
+
+   /* Mapa*/
+
+   #mapa{
+    width: 100%;
+    height: 300px;
+   }
+
+   @media (max-width: 500px){
+    #ws{
+      width: 120px;
+      height: 150px;
+    }
+   }
