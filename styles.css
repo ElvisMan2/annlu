@@ -54,12 +54,34 @@ body {
 
 
   #carousel{
-    background-image: url("./images/bg-annlu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    
     margin-top: 70px;
 
   }
+
+
+#carousel .carousel-inner{
+    background-image: url("./images/bg-annlu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+  #carousel .carousel-item{
+    height: 300px;
+  }
+
+  @media (min-width: 400px) and (max-width: 576px){
+
+    .col-sm-12 {
+      flex: 0 0 auto !important;
+      width: 100% !important;
+  }
+
+  }
+  
+
 
   #navbar{
     position: fixed;
@@ -88,7 +110,7 @@ body {
     color: red;
   }
 
-  /* Carrusel*/
+  /* Carrusel de productos ex marcas*/
 
   .carousel-marcas .carousel-inner {
     padding: 1em;
