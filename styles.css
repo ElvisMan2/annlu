@@ -6,10 +6,15 @@
 }
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
+
+* {
+  font-family: "Noto Sans Bengali", sans-serif !important;
+}
+
 body {
     margin: 0;
     padding: 0;
-
   }
 
 
