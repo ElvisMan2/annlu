@@ -83,7 +83,7 @@
        <div class="col-lg-6 col-md-12 mb-3 p-3">
         <h2 mb-2>Escríbenos</h2>
         <p mb-2>Tu opinión es valiosa para nosotros, ya sea la de los profesionales de la salud, clientes y proveedores. Por eso, agradecemos tu interés y solicitamos nos comuniques cualquier comentario.</p>
-        <form id="contact-form" class="">
+        <form id="contact-form" action="https://formspree.io/f/mqkreell" method="POST">
           <label class="form-label" for="nombre-apellido">Nombre y Apellido:</label>
           <input class="mb-2 form-control" type="text" id="nombre-apellido" name="nombre-apellido" required>
       
@@ -105,7 +105,7 @@
           <label class="form-label" for="mensaje">Mensaje:</label>
           <textarea class="mb-2 form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
       
-          <button class="mb-2 btn btn-primary" type="button" onclick="validarFormulario()">Enviar</button>
+          <button class="mb-2 btn btn-primary" type="submit" onclick="validarFormulario()">Enviar</button>
       
           <p id="error-message"></p>
       </form>
@@ -143,7 +143,7 @@
             
             <li class="nav-item mb-2">Teléfono: 937207051</li>
             <li class="nav-item mb-2">Oficina: Pro. Lucanas Nro. 718 Lima - La Victoria</li>
-            <li class="nav-item mb-2">Dirección: Jr. Mateo Aguilar 220 – SMP</li>
+            <li class="nav-item mb-2">Almacén: Jr. Mateo Aguilar 220 – SMP</li>
           </ul>
         </div>
         
@@ -162,5 +162,24 @@
       </a>
     </span>
     <script src="./script.js"></script>
+    <script>
+      const $form =document.querySelector('#contact-form')
+      $form.addEventListener('submit', handleSubmit)
+      async function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+      const response =await fetch(this.action, {
+      method: this.method,
+      body: form,
+      headers: {
+      'Accept': 'application/json'
+      }
+      })
+      if (response.ok) {
+        alert('Formulario enviado correctamente');
+        this.reset()
+      }
+      }
+      </script>
 </body>
 </html>
