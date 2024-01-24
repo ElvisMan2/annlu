@@ -27,19 +27,7 @@ body {
     max-width: 230px;
 }
 
-.card figure{
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#banner{
-    background-image: url("./images/bg-annlu.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-}
 
 #footer{
     background-color: #0E78F0;
@@ -117,16 +105,16 @@ body {
 
   /* Carrusel de productos ex marcas*/
 
-  .carousel-marcas .carousel-inner {
+  .carousel-productos .carousel-inner {
     padding: 1em;
   }
-  .carousel-marcas .card {
+  .carousel-productos .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
   }
-  .carousel-marcas .carousel-control-prev,
-  .carousel-marcas .carousel-control-next {
+  .carousel-productos .carousel-control-prev,
+  .carousel-productos .carousel-control-next {
     background-color: #e1e1e1;
     width: 6vh;
     height: 6vh;
@@ -136,27 +124,27 @@ body {
   }
 
   @media (min-width: 768px) {
-    .carousel-marcas .carousel-item {
+    .carousel-productos .carousel-item {
       margin-right: 0;
       flex: 0 0 25%;
       display: block;
     }
-    .carousel-marcas .carousel-inner {
+    .carousel-productos .carousel-inner {
       display: flex;
     }
   }
-  .carousel-marcas .card .img-wrapper {
+  .carousel-productos .card .img-wrapper {
       max-width: 100%;
       height: 13em;
       display: flex;
       justify-content: center;
       align-items: center;
   }
-  .carousel-marcas .card img {
+  .carousel-productos .card img {
       max-height: 100%;
   }
   @media (max-width: 767px) {
-    .carousel-marcas .card .img-wrapper {
+    .carousel-productos .card .img-wrapper {
       height: 17em;
     }
   }
